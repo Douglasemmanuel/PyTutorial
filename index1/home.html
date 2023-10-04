@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a = 5
+        // let b = 0
+        // let d = a + b
+        // setTimeout (d,5000)
+        // console.log(d)
+        // let fruits = ["apple","Carrot","pineapple","banana"]
+        // function getfruit(){
+        // console.log(fruits)
+        // }
+        // getfruit()
+
+        // const people =[
+        //     {name:'bob',age:20,position:'developer'},
+        //     {name:'peter',age:25,position:'designer'},
+        //     {name:'susy',age:30,position:'the boss'}
+        // ];
+        // function showPerson(person){
+        //     console.log ( person.position.touppercase());
+        // }
+        //  people.forEach(function(item){
+        //     console.log(item.position.touppercase())
+        // });
+        // const person = {
+        //     name :"Douglas Emmanuel",
+        //     weight : 60,
+        //     haircolor:"black",
+        //     isMarried: "false",
+        //     hobbies :["football","chess"]
+        // }
+        // const itemsPrice = {
+        //     rice: 2000,
+        //     beans : 2000,
+        //     garri : 1500,
+        //     onion : 500,
+        //     salad:1000,
+        // }
+        // const personProps = Object.keys(person)
+        // // console.log(personProps)
+        // const capitalizedProps = personProps.map(props =>
+        //   props.toUpperCase()
+        // )
+        // // console.log(capitalizedProps)
+        // const priceofItems = object.value(itemsPrice)
+        // // console.log(priceofItems)
+        // const totalPrice = itemsPrice.reduce((total,cv)=>(total + cv),0)
+        // console.log(totalPrice)
+        function getuser(req,res){
+            const api=
+            'https://api.github.com/users/Douglasemmanuel';
+            fetch (api).then((res)=>res.json()).then((userprofile)=>{
+              console.log(userprofile)
+            })
+        }
+        getuser()
+    //     function loadscript (sre,callback){
+    //         let script = document.createElement('script')
+    //         script.src = src
+    //         script.onload =()=> callback(script);
+    //         document.head.append(script);
+    //     }
+    //     console.log("cool")
+    //     function delay (ms){
+    //         return new Promise(resolve =>setTimeout(resolve,ms));
+    //     }
+    //     delay(300).then(()=>alert('runs after 3 seconds'))
+    // async function loadjson (url){
+    //     let response = await fetch(url);
+    //     if(response.status == 200){
+    //         let json = awaitresponse.json();
+    //         return json
+    //     }
+    //     throw new Error(response.status)
+    // }
+    // loadjson('no-such-user.json')
+    // .catch(alert);
+    </script>
+</body>
+</html>

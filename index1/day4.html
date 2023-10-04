@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert {
+            background-color: white;
+            font-size: 1rem;
+            padding: 1rem;
+            height: 15rem;
+            width: 30%;
+            margin: auto;
+            color: black;
+            border: 1px solid black;
+            box-shadow: 1px 2px 5px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .alert h1 {
+            color: green;
+        }
+
+        #alertok {
+            background-color: green;
+            color: black;
+            padding: 10px 16px;
+            border: none;
+            float: right;
+            /* margin: auto; */
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .imort {
+            border-radius: .5px;
+            border: 2px solid black;
+        }
+
+        .student {
+            border-radius: .5px;
+            border: 2px solid black;
+        }
+        .void-container{
+            display: flex;
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        .click{
+            padding: 7px 14px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-1">
+        <h2 id="registration">Registration Form</h2>
+        <div class="container">
+            <button id="btn">ROOTHUB</button>
+            <button id="dame">DAME</button>
+            <p id="page">game</p>
+            <input type="text" id="type">
+        </div>
+        <form id="form" action=" ">
+            <label for="First-Name">First-Name </label>
+            <input id="first-name" placeholder="first-name" type="text" value="john"
+                onfocus="this.style.backgroundcolor='red'" onblur="this.style.backgroundcolor ='purple'">
+
+            <br>
+            <label for="last-Name">Last-Name
+                <input id="last-name" placeholder="last-name" type="text" value="jose">
+            </label>
+            <br>
+            <label for="phone-number ">phone-number
+                <input id="phone-number" placeholder="0902100000" type="number " value="09021003802">
+            </label>
+            <br>
+            <label for="email">email
+                <input id="email" placeholder="mmmm@gmail.com" type="email" value="douglasemmanuel21@gmail.com">
+            </label>
+            <br>
+            <input type="submit" name="submit" id="hover" class="vool">
+        </form>
+    </section>
+    <!-- <div class="student ">
+        <div class="name">DAYO</div>
+        <div class="email">douglasemmanuel21@gmail.com</div>
+        <div class="phonenumber">09021003802</div>
+        <button class="end">X</button>
+    </div> -->
+    <div class="void-container" id="volume">
+        <div class="image">
+            <img src="images/Cristiano_Ronaldo_2018.jpg" alt="" height="200px" width="200px">
+        </div>
+        <div class="meal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Similique odio quibusdam
+            exercitationem. Rerum officia<br> nisi quo perspiciatis aliquam<br> at illum esse ab inventore?
+        </div>
+    </div>
+    <!-- <div class="imort">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+     </div> -->
+    <div class="alert hidden">
+        <h2>This is an Alert!</h2>
+        <p>This is a very simple examples of how a custom alert window can be created and displayed dynamically using
+            javascript</p>
+        <button id="alertok">OK</button>
+    </div>
+    <div class="prompt hidden">
+        <h2>This is a prompt</h2>
+        <p>Please Enter your age.</p>
+        <input type="text" id="input">
+        <button class="modal-text" id="promptcancel">Cancel</button>
+        <button class="modal-btn" id="pomptok">OK</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="void-container">
+        <div class="bold">
+            Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit<br>. Officiis, architecto.
+          <button class="click">GO</button>
+        </div>
+        <div class="inner"></div>
+    </div>
+
+</body>
+<script src="./day4.js">
+</script>
+
+</html>

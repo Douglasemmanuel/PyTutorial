@@ -1,0 +1,5 @@
+This is a sample file to explain how a promise works in javascript. 
+from the code,we are making an AJAX Call to get it,
+file created by:Manoj Jha
+file created date:June 21,2021
+purpose:To explain how promise works
